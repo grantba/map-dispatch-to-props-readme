@@ -17,7 +17,7 @@ class App extends Component {
   handleOnSubmit = event => {
     event.preventDefault();
     console.log("Todo being added: ", this.state.todo);
-    this.props.dispatch({ type: 'ADD_TODO', todo: this.state.todo });
+    this.props.dispatch({ type: 'ADD_TODO', todo: this.state.todo })
     this.setState({ todo: '' });
   }
 
